@@ -404,11 +404,11 @@ footer:
 
 # Baidu Analytics
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:
+baidu_analytics: 1a79cad641d92b2c14120b3d05f87b6d
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics:
+google_analytics: G-HXX9BLPW26
 
 # CNZZ Analytics
 # https://www.umeng.com/
