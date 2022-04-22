@@ -443,10 +443,10 @@ google_adsense:
 # --------------------------------------
 
 site_verification:
-  # - name: google-site-verification
-  #   content: xxxxxx
-  # - name: baidu-site-verification
-  #   content: xxxxxxx
+  - name: google-site-verification
+    content: oCAjsW9DIaQ65mDvKITr1A8WLt2syxwtiJE5kGGVZt0
+  - name: baidu-site-verification
+    content: code-LDCnusblOV
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
