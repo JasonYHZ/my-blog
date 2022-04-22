@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: JasonYu's Blog
-subtitle:
-description:
-keywords:
+title: JasonYu
+subtitle: 热爱学习无可自拔
+description: JasonYU的博客. 主要分享关于web开发, 前端开发, 以及其他相关技术,记录学习和交流分析, 以及对互联网行业的思考和分析。
+keywords: PHP,Java,Golang,Nodejs,Linux,Javascript,互联网,编程,开发,运维,教程
 author: Jason Yu
 language: zh-CN
-timezone: ''
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://www.yuhuizhen.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
