@@ -38,6 +38,7 @@ copy:
 social:
   fab fa-github: https://github.com/JasonYHZ || Github
   fas fa-envelope: mailto:coderyu2018@gmail.com || Email
+  fas fa-rss-square: /atom.xml || RSS
 
 # search (搜索)
 # --------------------------------------
