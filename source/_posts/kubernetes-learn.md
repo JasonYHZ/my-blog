@@ -154,10 +154,11 @@ DaemonSet 的一些典型用法：
 一种简单的使用场景下，你会创建一个 Job 对象以便以一种可靠的方式运行某 Pod 直到完成。 当第一个 Pod 失败或者被删除（比如因为节点硬件失效或者重启）时，Job 对象会启动一个新的 Pod。
 你也可以使用 Job 以并行的方式运行多个 Pod。
 **Cron Job** 就是可以周期性重复的 ** Job， **可以参考下 Linux 中的 Crontab。 
-:::warning
+{% note warning %}
 **Caution:**
 所有 **CronJob** 的 schedule: 时间都是基于 [kube-controller-manager](https://kubernetes.io/docs/reference/generated/kube-controller-manager/). 的时区。
 如果你的控制平面在 Pod 或是裸容器中运行了 kube-controller-manager， 那么为该容器所设置的时区将会决定 Cron Job 的控制器所使用的时区。
+{% endnote %}
 
 ## 重要的Service
 我们部署的应用最终都是运行在集群 Node 中的 Pod 里，如果我们要访问我们自己的应用就不可避免的要考虑如何访问 Pod。
