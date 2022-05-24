@@ -2,7 +2,7 @@
 title: 面向开发者的 Kubernetes 入门系列 - 基础篇
 date: 2022-05-23 10:00:00
 comment: true
-cover: false
+cover: https://cdn.jsdelivr.net/gh/JasonYHZ/CDN/blog/202205241738862.jpeg
 toc: true
 tags:
     - Kubernetes 入门
