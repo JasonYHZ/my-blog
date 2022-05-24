@@ -90,7 +90,7 @@ Kubernetes 主节点会自动处理在集群中的工作节点上调度 pod 。 
 一个 Kubernetes 集群由一组被称作节点的机器组成。这些节点上运行 Kubernetes 所管理的容器化应用。集群具有至少一个工作节点。
 工作节点托管作为应用负载的组件的 Pod 。控制平面管理集群中的工作节点和 Pod 。 为集群提供故障转移和高可用性，这些控制平面一般跨多主机运行，集群跨多个节点运行。
 现在我们来了解下交付正常运行的 Kubernetes 集群所需的各种组件。
-**控制平面组件（Control Plane Components） **
+** 控制平面组件（Control Plane Components） **
 控制平面的组件对集群做出全局决策（比如调度），以及检测和响应集群事件（例如，当不满足部署的 replicas 字段时，启动新的 [pod](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/)）。
 控制平面组件可以在集群中的任何节点上运行。 然而，为了简单起见，设置脚本通常会在同一个计算机上启动所有控制平面组件， 并且不会在此计算机上运行用户容器。 请参阅[使用 kubeadm 构建高可用性集群](https://kubernetes.io/zh/docs/setup/production-environment/tools/kubeadm/high-availability/) 中关于跨多机器控制平面设置的示例。
 **kube-apiserver**
@@ -112,7 +112,7 @@ etcd 是兼具一致性和高可用性的键值数据库，可以作为保存 Ku
 - 端点控制器（Endpoints Controller）：填充端点（Endpoints）对象（即加入 Service 与 Pod）
 - 服务帐户和令牌控制器（Service Account & Token Controllers）：为新的命名空间创建默认帐户和 API 访问令牌
 
-**cloud-controller-manager **
+** cloud-controller-manager **
 云控制器管理器是指嵌入特定云的控制逻辑的 [控制平面](https://kubernetes.io/zh/docs/reference/glossary/?all=true#term-control-plane)组件。 一般是云厂商来使用。
 
 ## 有趣的工作负载
@@ -153,7 +153,7 @@ DaemonSet 的一些典型用法：
 **Job** 会创建一个或者多个 Pods，并将继续重试 Pods 的执行，直到指定数量的 Pods 成功终止。随着 Pods 成功结束，Job 跟踪记录成功完成的 Pods 个数。 当数量达到指定的成功个数阈值时，任务（即 Job）结束。 删除 Job 的操作会清除所创建的全部 Pods。
 一种简单的使用场景下，你会创建一个 Job 对象以便以一种可靠的方式运行某 Pod 直到完成。 当第一个 Pod 失败或者被删除（比如因为节点硬件失效或者重启）时，Job 对象会启动一个新的 Pod。
 你也可以使用 Job 以并行的方式运行多个 Pod。
-**Cron Job** 就是可以周期性重复的 **Job， **可以参考下 Linux 中的 Crontab。 
+**Cron Job** 就是可以周期性重复的 ** Job， **可以参考下 Linux 中的 Crontab。 
 :::warning
 **Caution:**
 所有 **CronJob** 的 schedule: 时间都是基于 [kube-controller-manager](https://kubernetes.io/docs/reference/generated/kube-controller-manager/). 的时区。
