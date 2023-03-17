@@ -14,6 +14,11 @@ menu:
   # 关于我: /about/ || fas fa-heart
   友链: /link/ || fas fa-link
 
+nav:
+  logo: # image
+  display_title: true
+  fixed: false # fixed navigation bar
+
 # Code Blocks (代碼相關)
 # --------------------------------------
 
@@ -184,6 +189,7 @@ toc:
   number: true
   expand: true
   style_simple: false # for post
+  scroll_percent: true
 
 post_copyright:
   enable: true
@@ -748,6 +754,9 @@ darkmode:
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
   autoChangeMode: 1
+
+# show scroll percent in scroll-to-top button
+rightside_scroll_percent: true
 
 # Don't modify the following settings unless you know how they work (非必要請不要修改 )
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
